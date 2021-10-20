@@ -5,7 +5,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "npm run dev",
+    "dev": "webpack-dev-server --env development"
   },
   "author": "",
   "license": "ISC",
@@ -14,7 +15,7 @@
     "@babel/preset-env": "^7.15.8",
     "babel-loader": "^8.2.2",
     "html-webpack-plugin": "^5.4.0",
-    "webpack": "^5.58.2",
+    "webpack": "^5.59.0",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.3.1"
   }
