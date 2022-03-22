@@ -36,10 +36,7 @@ export default () => {
       ],
     },
     cache: {
-      type: "filesystem",
-      buildDependencies: {
-        config: [filename],
-      },
+      type: "filesystem"
     },
     plugins: [
       new HtmlWebpackPlugin(),
