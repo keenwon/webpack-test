@@ -27,8 +27,8 @@ export default () => {
       extensions: [".ts", ".tsx", ".cjs", ".mjs", ".js", ".jsx"],
     },
     externals: {
-      'node:path': 'commonjs2 node:path',
-      'node:url': 'commonjs2 node:url'
+      'node:path': 'commonjs2 path',
+      'node:url': 'commonjs2 url'
     },
     module: {
       rules: [
