@@ -1,5 +1,5 @@
-import path from "path"
-import {fileURLToPath} from "url"
+import path from "node:path"
+import {fileURLToPath} from "node:url"
 import webpack from "webpack"
 import HtmlWebpackPlugin from "html-webpack-plugin"
 
@@ -25,6 +25,10 @@ export default () => {
     mode: "development",
     resolve: {
       extensions: [".ts", ".tsx", ".cjs", ".mjs", ".js", ".jsx"],
+    },
+    externals: {
+      'node:path': 'commonjs2 node:path',
+      'node:url': 'commonjs2 node:url'
     },
     module: {
       rules: [
